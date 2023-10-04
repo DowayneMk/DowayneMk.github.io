@@ -1,0 +1,108 @@
+
+/*Style the header*/
+.header-content{
+    font-family: BeteNoirA; /*Change font*/
+    background-color: black; /*define a background color*/
+    color: #ffffff; /*define text color*/
+    margin: 0;
+    padding: 0;
+    width: 100%; /*Ensure header spans entire width of the page*/
+    height: 70px; /*set height of the header*/
+}
+
+/*Stlye social meader links*/
+.social-media{
+    display: flex;/*ensure links lay next to one another*/
+    float: left;
+    margin: 0;
+    padding: 7px 10px; /*create space between links and other elements*/
+}
+
+/*Create space between the links*/
+.social-media a{
+    margin: 0;
+    padding: 0 5px;
+}
+
+/*Style of link while hovering*/
+.social-media a .Instagram:hover{
+    transition: ease-in-out 1s; /*create transition*/
+    height: 65px; 
+    width: 65px;
+} 
+/*Style of link while hovering*/
+.social-media a .Twitter:hover{
+    transition: ease-in-out 1s;
+    height: 65px; /*define hight of link*/
+    width: 65px;
+} 
+/*Style of link while hovering*/
+.social-media a .Facebook:hover{
+    transition: ease-in-out 1s;
+    height: 65px;
+    width: 65px; /*define width of link*/
+} 
+
+
+/*Style Instagram link*/
+.Instagram{
+    background-image: url("Assests Exam/Instagram.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+/*Style Twitter link*/
+.Twitter{
+    background-image: url("Assests Exam/Twitter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px; 
+}
+
+/*Style Facebook link*/
+.Facebook{
+    background-image: url("Assests Exam/facebook.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+/*Style logo in the top and centreof the header*/
+.top-logo{
+    position: absolute; /*set position to not change*/
+    top: -50px; /*ensure link is at the top of the page*/
+    left: 36%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style logo in the top of the header*/
+.logo-image{
+    background-image: url("Assests Exam/Rhino.png"); /*insert logo image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /*Set position of the the image in relation to the text*/
+    bottom: 25px;
+    right: 25px;
+    height: 140px;
+    width: 150px;
+}
+
+/*set text and image in one line*/
+.top-logo li{
+    list-style-type: none;
+    display: inline-block;
+    height: 70px;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+/*ensure there is no underlin for the text and image*/
+.top-logo li a{
+    text-decoration: none;
+}

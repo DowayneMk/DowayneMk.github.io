@@ -1,0 +1,20 @@
+/*Style the entire page*/
+body{
+    text-align: center;
+    font-family: 'Humanst521 Lt BT';
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style the header of the page*/
+#thank-you-header{
+    background-image: url("Assests Exam/Thanks.jpg");/*insert image*/
+    background-size: cover; /*define area of image*/
+    background-repeat: no-repeat; /*eliminate repeating of image*/
+    width: 100%;
+    height: 100vh; /*ensure hieght is only as big as the initial view so that content may follow*/
+}
+
+
+

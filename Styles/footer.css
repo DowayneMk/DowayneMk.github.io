@@ -1,0 +1,114 @@
+/*Set style of the footer*/
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 130px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*style line in footer*/
+footer hr{
+    width: 10%;
+}
+
+/*move list to the exdge of margins*/
+footer .nav ul{
+    margin: 0;
+}
+
+/*style the list items of nav*/
+footer .nav ul li{
+    list-style-type: none; /*remove bullets*/
+    display: inline-block; /*ensure list are in one line*/
+}
+
+/*style each text item in list*/
+footer .nav ul li a{
+    text-decoration: none; /*ensure there is no underline*/
+    padding: .5em;
+    color: grey; /*set color of text*/
+}
+
+/*insert and style bottom logo*/
+.bottom-logo{
+    background-image: url("Assests Exam/LOgo.jpg");/*insert logo*/
+    background-repeat: no-repeat; /*ensure logo does not reapeat*/
+    background-size: 165px; /*set size of logo*/
+    background-position: -17px -10px; /*set position of logo*/
+    border-radius: 50%; /*ensure logo image is round*/
+    width: 130px;
+    height: 130px;
+    margin: .5em;
+    padding: 0;
+    float: right; /*move logo to the right of the footer*/
+}
+
+/*style for the email box*/
+#newsletter{
+    background-color: white;
+    color: black;
+    height: 20px;
+    width: 150px;
+}
+
+/*Style the button*/
+#join {
+    background-color: white;
+    opacity:1;
+    padding: 0;
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+/*create hover effect*/
+#join:hover{
+    color:white;
+}
+/*style text in button*/
+#join p {
+        color: black;
+        text-decoration: none;
+    }
+
+/*Style the Pop Up */
+.popup {
+    display: none; /*Hide*/
+    position: fixed; /*Ensure text does not move*/
+    z-index: 1; /*set to the top*/
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /*Enable scroll effect*/
+    background-color: rgb(0,0,0); /*Fallback color*/
+    background-color: rgba(0,0,0,0.4); /*Black w/ opacity*/
+}
+
+/*Pop Up Text*/
+.popup-text {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*Style the clost button*/
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ .close:hover,
+ .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }

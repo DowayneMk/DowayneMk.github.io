@@ -1,0 +1,102 @@
+/*Style the bars for the hamburger*/
+#hamburger-bars{
+    background-color: black; /*background color*/
+    width: 35px;
+    height: 30px;
+    margin: 20px 20px 20px 0;
+    cursor: pointer; /*change cursor to a pointer*/
+}
+
+/*create bars for nav*/
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px; /*make bars with round corners*/
+    transition: 0.3 ease-in-out;
+}
+
+/*set position of top bar*/
+#top-bar{
+    transform: translateY(-4px);
+}
+
+/*set position of bottom bar*/
+#bottom-bar{
+    transform: translateY(4px);
+}
+
+/*rotate top bar*/
+.change #top-bar{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+/*take away middle bar from view*/
+.change #middle-bar{
+    opacity: 0;
+}
+
+/*rotate bottom bar*/
+.change #bottom-bar{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+/*hide nav*/
+.nav{
+    padding: 10px;
+    margin-right: 50px;
+    transition: 0.3 ease;
+    display: none;/*don't show*/
+}
+
+/*Show nav*/
+.toggle-nav{
+    display: block; /*show*/
+}
+
+/*style of element in list*/
+.nav li{
+    list-style-type: none; /*remove bullet pionts*/
+    text-align: left; /*align text to the left margin*/
+    padding: 5px 30px 5px 10px;
+    margin-left: 0;
+}
+
+/*Style text of the list*/
+.nav li a{
+    text-decoration: none; /*ensure there is no underline*/
+    color: white; /*colour of the text*/
+    padding: 0 10px;
+}
+
+/*style hover effect*/
+.nav li a:hover{
+    background-color: lightgrey;/*change background color of text when cursor is over text*/
+}
+
+/*style the navigations background*/
+.menu-bg{
+    width: 0;
+    height: 0;
+    background-color: black; /*background color*/
+    transition: 0.3s ease;
+    z-index: 1; /*set background to level 1 of index to apear below nav*/  
+}
+
+#hamburger-menu{
+    z-index: 2; /*set hamburger menu to level to of the indext to apear above backgorund*/
+}
+
+/*Style size of background once hamburger is toggled*/
+.change-bg{
+    width: 15em;
+    height: 20em;
+}
+
+/*Set position of hamburger nav to the top tight of page*/
+.menu-bg, #hamburger-menu{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
